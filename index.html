@@ -11,9 +11,10 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/slick/slick.css">
-        <!--link rel="stylesheet" href="css/main.css"-->
-        <link rel="stylesheet/less" href="less/main.less">
-        <script src="js/vendor/less.min.js"></script>
+        <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!--link rel="stylesheet/less" href="less/main.less">
+        <script src="js/vendor/less.min.js"></script-->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
@@ -229,8 +230,81 @@
             </div>
         </section>
         <section class="block08"  id="block08">
-            <div class="container"></div>
+            <div class="top">
+                <div class="container">
+                    <h2>Торопитесь чтобы успеть пройти процедуру до конца года
+                        <span class="subtitle">и уже в следующем году Вы сэкономите до 95% на налоге</span>
+                    </h2>
+                    <div class="scale">
+                        <div class="item1">
+                            Подготовка документов,
+                            <br/>оценка, экспертиза
+                            <br/>(наша работа)
+                        </div>
+                        <div class="item2">
+                            Рассмотрение дела в суде
+                            <br/>может длиться
+                            <br/>от <strong>1</strong> месяца до <strong>года</strong>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="application_form">
+                            <div class="application_form__title">Форма заявки на бесплатный расчёт Вашей экономии</div>
+                            <form enctype="multipart/form-data" method="post" class="cform mini form">
+                                <ol class="cf-ol">
+                                    <li>
+                                        <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                                    </li>
+                                    <li>
+                                        <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                                    </li>
+                                </ol>
+                                <p class="cf-sb">
+                                    <input type="submit" name="sendbutton" class="sendbutton" value="Заказать проект" onclick="return cforms_validate('8', false)"/>
+                                </p>
+                            </form>
+                            <div class="form_box">
+                                <div class="inner"><p class="text-top">Заполните форму и получите</p></div>
+                                <p>Бесплатный расчёт Вашей экономики в течении<br/>24 часов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__title">Остались вопрсы? Звоните!</div>
+                    <a href="#" class="dev"></a>
+                    <div class="footer__contact">
+                        <div class="tel">8 800 775 55 65</div>
+                        <ul>
+                            <li>email: mail@mail.ru</li>
+                            <li>адрес и реквизиты компании</li>
+                            <li>ИНН, ОГРН</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </section>
+
+        <div class="hidden">
+            <div class="application_form" id="form-popup">
+                <div class="application_form__title">Форма заявки на бесплатный расчёт Вашей экономии</div>
+                <form enctype="multipart/form-data" method="post" class="cform mini form">
+                    <ol class="cf-ol">
+                        <li>
+                            <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                        </li>
+                        <li>
+                            <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                        </li>
+                    </ol>
+                    <p class="cf-sb">
+                        <input type="submit" name="sendbutton" class="sendbutton" value="Заказать проект" onclick="return cforms_validate('8', false)"/>
+                    </p>
+                </form>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
